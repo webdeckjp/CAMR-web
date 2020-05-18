@@ -1,17 +1,245 @@
+/* font */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* ====universals and resets====== */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
-html,
-body,
-button {
-  font-family: "Lato", sans-serif;
+/* 1rem = 16px */
+html {
+  font-size: 16px;
 }
 
 body {
   background-color: white;
+  max-width: 1024px;
+}
+
+/* text */
+
+/* Lato for the win */
+html,
+body,
+button {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h1,
+h3 {
+  color: #3f3f3f;
+  margin: 2rem 2rem 1rem;
+  text-transform: uppercase;
+  line-height: 115%;
+  /* or 26px */
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  width: 100%;
+  font-size: 1.7rem;
+  line-height: 110%;
+  /* or 26px */
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h5 {
+  text-align: center;
+}
+
+p {
+  line-height: 150%;
+  /* or 19px */
+  color: #808080;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+hr {
+  width: calc(100% - 32px);
+  margin: 0px auto;
+  height: 1px;
+  background-color: #e7e7e7;
+  border: none;
+}
+
+hr.separator {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* buttons */
+
+button {
+  display: block;
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 0.25rem;
+  text-transform: uppercase;
+  color: white;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 110%;
+  /* or 26px */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 2rem auto;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+button:active {
+  box-shadow: 0 0 0 white;
+  translate: 6px 10px 2px 10px;
+}
+
+.green {
+  background: #54c6b7;
+}
+
+.blue {
+  background: #1c1556;
+}
+
+.red {
+  background: #941c23;
+}
+
+/* ======top navigation======= */
+.navigation-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  margin: auto;
+  height: 4rem;
+}
+
+.mobile-logo {
+  margin-left: 1rem;
+}
+
+.mobile-nav-links {
+  flex-grow: 1;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: auto 3rem;
+}
+
+.mobile-nav-links a {
+  text-decoration: none;
+  color: #4d4d4d;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-weight: 400;
+}
+
+/* tiles */
+.wa a:hover,
+.wa a:active {
+  color: #1c1556;
+  border-color: #1c1556;
+}
+
+.ri a:hover,
+.ri a:active {
+  color: #54c6b7;
+  border-color: #54c6b7;
+}
+
+.na a:hover,
+.na a:active {
+  color: #941c23;
+  border-color: #941c23;
+}
+
+/* =======header, main images======= */
+
+.hero img {
+  display: block;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+}
+
+.featured-image {
+  min-height: 260px;
+  background-image: url("/resources/img/header-mobile.png");
+  background-size: cover;
+}
+
+/* ===== cards ====== */
+
+.feature {
+  display: flex;
+  width: calc(100% - 4rem);
+  height: 440px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2rem;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* card images */
+
+section#club .feature {
+  background-image: url("/resources/img/nuestro-club-mobile.png");
+}
+
+section#rank .feature {
+  background-image: url("/resources/img/ranking-mobile.png");
+}
+
+section#call .feature {
+  background-image: url("/resources/img/contacto-mobile.png");
+}
+
+/* footer */
+footer {
+  background-color: #e1e1e1;
+  padding: 2rem;
+}
+
+.sns {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.facebook,
+.twitter,
+.instagram {
+  height: 2rem;
+  width: 2rem;
 }
