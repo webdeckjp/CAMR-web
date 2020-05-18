@@ -194,7 +194,7 @@ button:active {
 
 .featured-image {
   min-height: 260px;
-  background-image: url("./resources/img/header-mobile.png");
+  background-image: url("https://webdeckjp.github.io/CAMR-web/resources/img/header-mobile.png");
   background-size: cover;
 }
 
@@ -214,15 +214,15 @@ button:active {
 /* card images */
 
 section#club .feature {
-  background-image: url("./resources/img/nuestro-club-mobile.png");
+  background-image: url("https://webdeckjp.github.io/CAMR-web/resources/img/nuestro-club-mobile.png");
 }
 
 section#rank .feature {
-  background-image: url("./resources/img/ranking-mobile.png");
+  background-image: url("https://webdeckjp.github.io/CAMR-web/resources/img/ranking-mobile.png");
 }
 
 section#call .feature {
-  background-image: url("./resources/img/contacto-mobile.png");
+  background-image: url("https://webdeckjp.github.io/CAMR-web/resources/img/contacto-mobile.png");
 }
 
 /* footer */
